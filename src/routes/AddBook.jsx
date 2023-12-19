@@ -1,39 +1,41 @@
-import { useState } from 'react';
-import TextField from '@mui/material/TextField';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox from '@mui/material/Checkbox';
-import Rating from '@mui/material/Rating';
-import Button from '@mui/material/Button';
-import OutlinedInput from '@mui/material/OutlinedInput';
-import MenuItem from '@mui/material/MenuItem';
-import Select from '@mui/material/Select';
-import Alert from '@mui/material/Alert';
-import { DateField } from '@mui/x-date-pickers/DateField';
-import useAxios from '../services/useAxios';
-import { bookGenres } from '../genres';
-import { Stack, Typography } from '@mui/material';
+import { useState } from "react";
+import TextField from "@mui/material/TextField";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import Checkbox from "@mui/material/Checkbox";
+import Rating from "@mui/material/Rating";
+import Button from "@mui/material/Button";
+import OutlinedInput from "@mui/material/OutlinedInput";
+import MenuItem from "@mui/material/MenuItem";
+import Select from "@mui/material/Select";
+import Alert from "@mui/material/Alert";
+import { DateField } from "@mui/x-date-pickers/DateField";
+import useAxios from "../services/useAxios";
+import { bookGenres } from "../genres";
+import { Stack, Typography } from "@mui/material";
 
 function AddBook() {
-  const { alert, post } = useAxios('http://localhost:3001');
+  const { alert, post } = useAxios("http://localhost:3001"); // data we get from the url has been stored in alert
   const [rateValue, setRateValue] = useState(3);
+  /* use state has been used to set all the components */
   const [book, setBook] = useState({
-    author: '',
-    name: '',
+    author: "",
+    name: "",
     genres: [],
     completed: false,
     start: null,
     end: null,
     stars: null,
   });
-
+  // this function changes the genre of the book
   const genreChangeHandler = (event) => {
     const { value } = event.target;
     setBook({
       ...book,
-      genres: typeof value === 'string' ? value.split(',') : value,
+      genres: typeof value === "string" ? value.split(",") : value,
     });
   };
 
+  // gives the rating to the books i.e. stars
   const rateChangeHandler = (event) => {
     const { value } = event.target;
     setBook({
@@ -42,17 +44,19 @@ function AddBook() {
     });
   };
 
+  // function helps to add new function
   const addBookHandler = (e) => {
     const { name, value, checked, type } = e.target;
-    if (type === 'checkbox' && name === 'completed') {
+    if (type === "checkbox" && name === "completed") {
       setBook({ ...book, [name]: checked });
     } else {
       setBook({ ...book, [name]: value });
     }
   };
 
+  //Post the books
   function postHandler() {
-    post('books', book);
+    post("books", book);
   }
 
   return (
@@ -60,7 +64,7 @@ function AddBook() {
       <Stack
         spacing={1}
         alignItems="stretch"
-        sx={{ my: 2, mx: 'auto', width: '25%' }}
+        sx={{ my: 2, mx: "auto", width: "25%" }}
       >
         {alert.show && <Alert severity={alert.type}>{alert.message}</Alert>}
         <Typography variant="h4" component="h2" sx={{ my: 10 }}>
