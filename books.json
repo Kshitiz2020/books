@@ -70,9 +70,11 @@
       "img": "https://www.davidjpphillips.com/wp-content/uploads/2023/08/highonlife_copy-195x300.jpg"
     },
     {
-      "author": "",
-      "name": "",
-      "genres": [],
+      "author": "RObin Sharma",
+      "name": "5 AM",
+      "genres": [
+        "Self-Help"
+      ],
       "completed": false,
       "start": null,
       "end": null,
@@ -83,10 +85,11 @@
       "author": "",
       "name": "",
       "genres": [],
-      "completed": true,
+      "completed": false,
       "start": null,
       "end": null,
       "stars": null,
+      "img": "https://www.pexels.com/photo/grass-with-drops-of-water-2775840/",
       "id": 7
     },
     {
@@ -96,247 +99,9 @@
       "completed": false,
       "start": null,
       "end": null,
+      "stars": null,
+      "img": "https://images.pexels.com/photos/2775840/pexels-photo-2775840.jpeg",
       "id": 8
-    },
-    {
-      "author": "",
-      "name": "",
-      "genres": [],
-      "completed": false,
-      "start": null,
-      "end": null,
-      "stars": null,
-      "id": 9
-    },
-    {
-      "author": "",
-      "name": "",
-      "genres": [],
-      "completed": false,
-      "start": null,
-      "end": null,
-      "stars": null,
-      "id": 10
-    },
-    {
-      "author": "",
-      "name": "",
-      "genres": [],
-      "completed": false,
-      "start": null,
-      "end": null,
-      "stars": null,
-      "id": 11
-    },
-    {
-      "author": "",
-      "name": "",
-      "genres": [],
-      "completed": false,
-      "start": null,
-      "end": null,
-      "stars": null,
-      "id": 12
-    },
-    {
-      "author": "",
-      "name": "",
-      "genres": [],
-      "completed": false,
-      "start": null,
-      "end": null,
-      "stars": null,
-      "id": 13
-    },
-    {
-      "author": "",
-      "name": "",
-      "genres": [],
-      "completed": false,
-      "start": null,
-      "end": null,
-      "stars": null,
-      "id": 14
-    },
-    {
-      "author": "",
-      "name": "",
-      "genres": [],
-      "completed": false,
-      "start": null,
-      "end": null,
-      "stars": null,
-      "id": 15
-    },
-    {
-      "author": "",
-      "name": "",
-      "genres": [],
-      "completed": false,
-      "start": null,
-      "end": null,
-      "stars": null,
-      "id": 16
-    },
-    {
-      "author": "",
-      "name": "",
-      "genres": [],
-      "completed": false,
-      "start": null,
-      "end": null,
-      "stars": null,
-      "id": 17
-    },
-    {
-      "author": "",
-      "name": "",
-      "genres": [],
-      "completed": false,
-      "start": null,
-      "end": null,
-      "stars": null,
-      "id": 18
-    },
-    {
-      "author": "",
-      "name": "",
-      "genres": [],
-      "completed": false,
-      "start": null,
-      "end": null,
-      "stars": null,
-      "id": 19
-    },
-    {
-      "author": "",
-      "name": "",
-      "genres": [],
-      "completed": false,
-      "start": null,
-      "end": null,
-      "stars": null,
-      "id": 20
-    },
-    {
-      "author": "",
-      "name": "",
-      "genres": [],
-      "completed": false,
-      "start": null,
-      "end": null,
-      "stars": null,
-      "id": 21
-    },
-    {
-      "author": "",
-      "name": "",
-      "genres": [],
-      "completed": false,
-      "start": null,
-      "end": null,
-      "stars": null,
-      "id": 22
-    },
-    {
-      "author": "",
-      "name": "",
-      "genres": [],
-      "completed": false,
-      "start": null,
-      "end": null,
-      "stars": null,
-      "id": 23
-    },
-    {
-      "author": "",
-      "name": "",
-      "genres": [],
-      "completed": false,
-      "start": null,
-      "end": null,
-      "stars": null,
-      "id": 24
-    },
-    {
-      "author": "",
-      "name": "",
-      "genres": [],
-      "completed": false,
-      "start": null,
-      "end": null,
-      "stars": null,
-      "id": 25
-    },
-    {
-      "author": "",
-      "name": "",
-      "genres": [],
-      "completed": false,
-      "start": null,
-      "end": null,
-      "stars": null,
-      "id": 26
-    },
-    {
-      "author": "",
-      "name": "",
-      "genres": [],
-      "completed": false,
-      "start": null,
-      "end": null,
-      "stars": null,
-      "id": 27
-    },
-    {
-      "author": "",
-      "name": "",
-      "genres": [],
-      "completed": false,
-      "start": null,
-      "end": null,
-      "stars": null,
-      "id": 28
-    },
-    {
-      "author": "",
-      "name": "",
-      "genres": [],
-      "completed": false,
-      "start": null,
-      "end": null,
-      "stars": null,
-      "id": 29
-    },
-    {
-      "author": "",
-      "name": "",
-      "genres": [],
-      "completed": false,
-      "start": null,
-      "end": null,
-      "stars": null,
-      "id": 30
-    },
-    {
-      "author": "",
-      "name": "",
-      "genres": [],
-      "completed": false,
-      "start": null,
-      "end": null,
-      "stars": null,
-      "id": 31
-    },
-    {
-      "author": "",
-      "name": "",
-      "genres": [],
-      "completed": false,
-      "start": null,
-      "end": null,
-      "stars": null,
-      "id": 32
     }
   ]
 }

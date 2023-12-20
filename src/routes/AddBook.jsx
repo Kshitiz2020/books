@@ -24,6 +24,7 @@ function AddBook() {
     start: null,
     end: null,
     stars: null,
+    img: "https://images.pexels.com/photos/2775840/pexels-photo-2775840.jpeg",
   });
 
   const genreChangeHandler = (event) => {
