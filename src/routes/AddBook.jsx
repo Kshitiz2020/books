@@ -51,7 +51,8 @@ function AddBook() {
     }
   };
 
-  function postHandler() {
+  function postHandler(e) {
+    e.preventDefault();
     post("books", book);
   }
 
