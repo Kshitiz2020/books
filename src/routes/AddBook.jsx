@@ -14,8 +14,13 @@ import { bookGenres } from "../genres";
 import { Stack, Typography } from "@mui/material";
 
 function AddBook() {
+<<<<<<< HEAD
   const { alert, post } = useAxios("http://localhost:3000");
+=======
+  const { alert, post } = useAxios("http://localhost:3001"); // data we get from the url has been stored in alert
+>>>>>>> main
   const [rateValue, setRateValue] = useState(3);
+  /* use state has been used to set all the components */
   const [book, setBook] = useState({
     author: "",
     name: "",
@@ -26,7 +31,7 @@ function AddBook() {
     stars: null,
     img: "https://images.pexels.com/photos/2775840/pexels-photo-2775840.jpeg",
   });
-
+  // this function changes the genre of the book
   const genreChangeHandler = (event) => {
     const { value } = event.target;
     setBook({
@@ -35,6 +40,7 @@ function AddBook() {
     });
   };
 
+  // gives the rating to the books i.e. stars
   const rateChangeHandler = (event) => {
     const { value } = event.target;
     setBook({
@@ -43,6 +49,7 @@ function AddBook() {
     });
   };
 
+  // function helps to add new function
   const addBookHandler = (e) => {
     const { name, value, checked, type } = e.target;
     if (type === "checkbox" && name === "completed") {
@@ -52,8 +59,13 @@ function AddBook() {
     }
   };
 
+<<<<<<< HEAD
   function postHandler(e) {
     e.preventDefault();
+=======
+  //Post the books
+  function postHandler() {
+>>>>>>> main
     post("books", book);
   }
 
